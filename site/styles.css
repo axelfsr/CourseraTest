@@ -54,7 +54,7 @@ main p {
 
 .image-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centramos las imágenes horizontalmente */
     gap: 2%;
     flex-wrap: wrap;
 }

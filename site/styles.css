@@ -68,6 +68,11 @@ main p {
     border: 2px solid #8B0000;
 }
 
+/* Ajustamos el tamaño de las imágenes */
+.image-container img {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;

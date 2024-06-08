@@ -31,6 +31,17 @@ main p {
     font-size: 1.2em;
     color: #FFD700;
     text-shadow: 1px 1px 2px #000;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #8B0000;
 }
 
 @media (max-width: 768px) {
@@ -40,5 +51,10 @@ main p {
 
     main p {
         font-size: 1em;
+    }
+    
+    .image {
+        width: 100%;
+        max-width: none;
     }
 }

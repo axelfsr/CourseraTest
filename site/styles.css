@@ -3,27 +3,41 @@ body {
     background: url('https://example.com/toro-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden; /* Evitamos el desplazamiento horizontal */
+    overflow-y: auto; /* Permitimos el desplazamiento vertical */
+    height: 100%; /* Establecemos una altura del 100% */
 }
 
 .container {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px;
+    padding: 5%;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     border: 2px solid #8B0000;
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 100vh; /* Aseguramos una altura mínima equivalente a la altura de la ventana del navegador */
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 header h1 {
     font-size: 3em;
     color: #FFD700;
     text-shadow: 2px 2px 4px #000;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px #000;
     margin-bottom: 20px;
 }
 
@@ -34,11 +48,21 @@ main p {
     margin-bottom: 20px;
 }
 
+.content {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
 .image {
-    width: 80%;
-    max-width: 600px;
+    width: 48%;
+    max-width: 100%;
     height: auto;
-    margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 2px solid #8B0000;
@@ -49,12 +73,15 @@ main p {
         font-size: 2em;
     }
 
+    header p {
+        font-size: 1em;
+    }
+    
     main p {
         font-size: 1em;
     }
     
     .image {
         width: 100%;
-        max-width: none;
     }
 }
